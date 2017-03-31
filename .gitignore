@@ -4,5 +4,6 @@ samples
 images
 fonts
 css
-
+.DS_Store
+.idea
 
