@@ -3,8 +3,6 @@
  */
 
 "use strict";
-
-config = require("./config.js");
 const includesHtml = "../"; //Ruta de donde se encuentra los css, js, images
 
 const express = require('express');

@@ -6,4 +6,4 @@ fonts
 css
 .DS_Store
 .idea
-
+node_modules
