@@ -1,9 +1,8 @@
 # Created by .ignore support plugin (hsz.mobi)
-/topbiz/.idea/
-/topbiz/css/
-/topbiz/fonts/
-/topbiz/images/
-/topbiz/js/
-/topbiz/samples/
-/topbiz/Canary-template/node_modules/
-/topbiz/Canary-template/public/
+/js/
+/samples/
+/images/
+/fonts/
+/css/
+/Canary-template/node_modules/
+/Canary-template/public/
