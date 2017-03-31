@@ -3,7 +3,7 @@
  */
 
 "use strict";
-const includesHtml = "../"; //Ruta de donde se encuentra los css, js, images
+const includesHtml = "../../tobiz/"; //Ruta de donde se encuentra los css, js, images
 
 const express = require('express');
 const app = express();
@@ -16,13 +16,13 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(expressLayouts);
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(includesHtml));
 
 
 
 
 app.get('/', (req, res) => {
-    res.render('index', { layout: 'prueba', includes_html:includesHtml});
+    res.render('index', { includes_html:includesHtml});
 });
 
 app.listen(app.get('port'), () => {
