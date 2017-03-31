@@ -1,9 +1,8 @@
 /**
  * Created by chinegua on 24/3/17.
  */
-
+const includesHtml = require("./config/mainConfig");
 "use strict";
-const includesHtml = "../../tobiz/"; //Ruta de donde se encuentra los css, js, images
 
 const express = require('express');
 const app = express();
