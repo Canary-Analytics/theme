@@ -3,6 +3,7 @@
  */
 
 "use strict";
+const includesHtml = "../"; //Ruta de donde se encuentra los css, js, images
 
 const express = require('express');
 const app = express();
@@ -21,7 +22,7 @@ app.use(express.static(__dirname + '/public'));
 
 
 app.get('/', (req, res) => {
-    res.render('index', { layout: 'prueba' });
+    res.render('index', { layout: 'prueba', includes_html:includesHtml});
 });
 
 app.listen(app.get('port'), () => {
