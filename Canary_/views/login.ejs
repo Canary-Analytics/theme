@@ -1,0 +1,11 @@
+<div class="">
+    <% if (!user) { %>
+        <div>
+            <a class="btn btn-primary btn-block" href="/login/twitter">Inicie sesión con Twitter</a>
+        </div>
+    <% } else { %>
+        <div>
+            Hola, <%= user.username %>. Consulta tu <a href="/profile">perfil</a> o realiza una <a href="/busqueda">busqueda</a>.
+        </div>
+    <% } %>
+</div>

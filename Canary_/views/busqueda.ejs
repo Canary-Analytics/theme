@@ -1,0 +1,85 @@
+<form method="post" action="/search">
+
+    <input type="input" name="valor[v1]" class="">
+
+    <input class="" type="submit" value="Enviar">
+</form>
+
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Ejemplo</th>
+    </tr>
+    <tr>
+        <td>Búsqueda simple</td>
+        <td>Búsqueda de términos, ya sea uno o varios. Es el operador por defecto</td>
+        <td><b>«Super Bowl»</b></td>
+    </tr>
+    <tr>
+        <td>Búsqueda avanzada</td>
+        <td>Búsqueda de términos, en este caso la busqueda es literal.</td>
+        <td><b>«"Super Bowl"»</b></td>
+    </tr>
+    <tr>
+        <td>OR</td>
+        <td>La búsqueda la realiza en los tweets que sólo contenga uno de los términos</td>
+        <td><b>«Patriots OR Falcons»</b></td>
+    </tr>
+    <tr>
+        <td>Exclusión</td>
+        <td>Realiza una búsqueda que contenga el término Patriots pero no Falcons</td>
+        <td><b>«Patriots -Falcons»</b></td>
+    </tr>
+    <tr>
+        <td>#Hashtag</td>
+        <td>Realiza una búsqueda del hashtag en cuestión.</td>
+        <td><b>«#SuperBowl»</b></td>
+    </tr>
+    <tr>
+        <td>TL de un usuario</td>
+        <td>Lista la TL de un usuario</td>
+        <td><b>«from:SuperBowl»</b></td>
+    </tr>
+    <tr>
+        <td>Lista</td>
+        <td>Muestra los tweets pertenecientes a una lista.</td>
+        <td><b>«list:NFL/Greatest-Show»</b></td>
+    </tr>
+    <tr>
+        <td>Respuestas</td>
+        <td>Muestra los tweets con las respuestas a un usuario</td>
+        <td><b>«to:SuperBowl»</b></td>
+    </tr>
+    <tr>
+        <td>Menciones a un usuario</td>
+        <td>Muestra los tweets con menciones a un usuario</td>
+        <td><b>«@SuperBowl»</b></td>
+    </tr>
+    <tr>
+        <td>Tweets sensibles</td>
+        <td>Muestra los tweets con contenido sensible.</td>
+        <td><b>«SuperBowl filter:safe»</b></td>
+    </tr>
+    <tr>
+        <td>Imagenes o vídeos</td>
+        <td>Muestra los tweets que contienen imágenes o videos.</td>
+        <td><b>«SuperBowl filter:media»</b></td>
+    </tr>
+    <tr>
+        <td>Contiene vídeo</td>
+        <td>Muestra los tweets que contienen video, Vine o periscope</td>
+        <td><b>«SuperBowl filter:native_video»</b></td>
+    </tr>
+    <tr>
+        <td>Contenido de plataformas</td>
+        <td>Muestra los tweets que contiene periscope, vine, images, twimg, links</td>
+        <td><b>«SuperBowl filter:[contenido]»</b></td>
+    </tr>
+    <tr>
+        <td>TL fechas</td>
+        <td>Muestra los tweets por fechas según los parámetros since o until.</td>
+        <td><b>«SuperBowl [parametro]:2017-01-05»</b></td>
+    </tr>
+
+</table>
