@@ -1,23 +1,36 @@
 {
-  "name": "canary-template",
-  "version": "1.0.0",
-  "description": "",
-  "main": "bin/www",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node bin/www"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.17.1",
-    "cookie-parser": "^1.4.3",
-    "ejs": "^2.5.6",
-    "express": "^4.15.2",
-    "express-session": "^1.15.2",
-    "morgan": "^1.8.1",
-    "passport": "^0.3.2",
-    "passport-twitter": "^1.0.4",
-    "twitter": "^1.7.0"
-  }
+    "name": "canary-template",
+    "version": "0.0.0",
+    "description": "Plataforma para el análisis de la red social Twitter",
+    "keywords": [
+        "twitter",
+        "analytics"
+    ],
+    "author": "Alejandro Arzola García, Aitor Bernal Falcón, Carlos de Armas Hernández, Samuel Ramos Barroso, Samuel Valcárcel Arce, Joshua Perez García",
+    "license": "MIT",
+    "homepage": "https://github.com/Canary-Analytics/theme",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/Canary-Analytics/theme.git"
+    },
+    "bugs": {
+        "url": "//github.com/Canary-Analytics/theme/issues"
+    },
+    "dependencies": {
+        "body-parser": "^1.17.1",
+        "cookie-parser": "^1.4.3",
+        "ejs": "^2.5.6",
+        "express": "^4.15.2",
+        "express-session": "^1.15.2",
+        "morgan": "^1.8.1",
+        "passport": "^0.3.2",
+        "passport-twitter": "^1.0.4",
+        "twitter": "^1.7.0"
+    },
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-jshint": "^2.0.4",
+        "jshint": "^2.9.4",
+        "jshint-stylish": "^2.2.1"
+    }
 }
