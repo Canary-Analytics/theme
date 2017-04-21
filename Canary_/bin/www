@@ -1,12 +1,10 @@
+#! /usr/bin/env node
+
 "use strict"
 
+const config = require('../config/configServer.js')
 const app = require('../app');
 
-let port = process.env.PORT || 8080;
-let ip   = process.env.IP || '0.0.0.0';
-
-console.log(__dirname)
-
-var server = app.listen(port, ip, () => {
-    console.log(`Express está encendido en ${server.address().address}:${server.address().port}`);
+app.listen(config.port, () => {
+  console.log(`Servidor corriendo en localhost:${config.port}`)
 });
