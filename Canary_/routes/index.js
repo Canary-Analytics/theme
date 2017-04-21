@@ -1,8 +1,15 @@
-module.exports = (app) => {
+'use strict'
 
-    app.get('/', (req, res) => {
-        res.render('index');
-    });
+const express = require('express');
+const api = express.Router();
+
+const Controllers = require('../app/controllers/controllers')
+
+api.get('/', Controllers.index);
+
+module.exports = api;
+
+
     /*
     app.get('/', (req, res) => {
         res.render('home', {
@@ -60,4 +67,3 @@ module.exports = (app) => {
         res.redirect('/');
     });
     */
-}
